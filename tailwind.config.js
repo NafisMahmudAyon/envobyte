@@ -1,25 +1,23 @@
 import { AspectUITheme, colors } from "aspect-ui/AspectUITheme";
 
-import type { Config } from "tailwindcss";
-
 const colorsPalette = {
 	...colors,
-	primary: {
-		50: "#f4f7fb",
-		100: "#e8eef6",
-		200: "#ccdceb",
-		300: "#9fc0da",
-		400: "#6b9ec5",
-		500: "#4883af",
-		600: "#366893",
-		700: "#2c5274",
-		800: "#294863",
-		900: "#263e54",
-		950: "#192838",
-	},
+	// primary: {
+	// 	50: "#fff",
+	// 	100: "#fff",
+	// 	200: "#fff",
+	// 	300: "#fff",
+	// 	400: "#fff",
+	// 	500: "#fff",
+	// 	600: "#fff",
+	// 	700: "#fff",
+	// 	800: "#fff",
+	// 	900: "#fff",
+	// 	950: "#fff",
+	// },
 };
 
-const config: Config = {
+const config = {
 	content: [
 		"./pages/**/*.{js,ts,jsx,tsx,mdx}",
 		"./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -37,5 +35,6 @@ const config: Config = {
 };
 
 export default AspectUITheme(config, colorsPalette);
+
 
 

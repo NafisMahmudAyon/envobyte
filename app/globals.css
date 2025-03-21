@@ -1,26 +1,43 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@config '../tailwind.config.js';
+
+@theme {
+  --color-org : #FF693B;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+@utility trim{
+  leading-trim: both;
+  text-edge: cap;
+}
+
+
+/* ScrollSlider component styles */
+.scroll-slider:hover .scroll-content {
+  animation-play-state: paused;
+}
+
+.scroll-slider:hover .scroll-overlay {
+  opacity: 1;
+}
+
+.scroll-content {
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+.box {
+  --mask:
+    radial-gradient(calc(17.49vw + 1.5px) at 50% calc(100% + 9vw),#0000 calc(99% - 3px),#000 calc(101% - 3px) 99%,#0000 101%) calc(50% - 30vw) calc(50% - 7.5vw - 1.5px + .5px)/60vw calc(15vw + 3px)  repeat-x,
+    radial-gradient(calc(17.49vw + 1.5px) at 50% -9vw,#0000 calc(99% - 3px),#000 calc(101% - 3px) 99%,#0000 101%) 50% calc(50% + 7.5vw + 1.5px)/60vw calc(15vw + 3px)  repeat-x;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+}
+
+/* *{outline: 1px solid red;} */
