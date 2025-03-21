@@ -1,5 +1,5 @@
-import TopSection from "./TopSection";
 import Header from "../Header";
+import TopSection from "./TopSection";
 
 const Hero = () => {
 	return (
@@ -9,8 +9,10 @@ const Hero = () => {
 				alt="Picture of the author"
 				className="absolute top-0 left-0 z-[-1]"
 			/> */}
-			<Header />
-			<TopSection />
+			<div className="max-w-[1902px] mx-auto">
+				<Header />
+				<TopSection />
+			</div>
 		</div>
 	);
 };

@@ -20,7 +20,7 @@ const roboto = Roboto({
 export default function Home() {
 	return (
 		<div className="">
-			<div className=" h-screen">
+			<div className="h-screen">
 				<Hero />
 				<DigitalService />
 				<div className="bg-white relative">

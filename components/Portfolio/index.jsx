@@ -32,7 +32,7 @@ const Portfolio = () => {
 		setCurrentIndex((prevIndex) => (prevIndex - 1 + ids.length) % ids.length);
 	};
 	return (
-		<div className="relative z-10 px-4 lg:px-[53px] pt-[100px] pb-[80px] lg:pb-[148px] ">
+		<div className="relative z-10 px-4 lg:px-[53px] pt-[100px] pb-[80px] lg:pb-[148px] max-w-[1902px] mx-auto  ">
 			<div className="flex flex-col lg:flex-row justify-between lg:items-end">
 				<div>
 					<Typography
