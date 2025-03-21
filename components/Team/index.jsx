@@ -65,7 +65,7 @@ const Team = () => {
 					Our Team Members
 				</Typography>
 			</div>
-			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-4 gap-2 lg:gap-0">
+			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-4 gap-2 lg:divide-white/30 lg:gap-0 lg:divide-x">
 				{teamData.map((member, i) => (
 					<Member key={i} {...member} />
 				))}
